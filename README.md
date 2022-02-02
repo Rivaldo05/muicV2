@@ -1,2 +1,2 @@
-# muicV2
+# musicV2
 projeto de um music player 
