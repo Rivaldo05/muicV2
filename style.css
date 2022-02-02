@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --progress-bar: hsl(268deg 89% 69%);
+    --progress-bar-conteiner: hsl(266deg 100% 95%);
+    --info-musica: hsl(274deg 35% 30%);
+    --secMusic: hsl(273deg 99% 68%);
+    --music-Conteiner: hsl(270deg 90% 85%);
+}
+
+header{
+    text-align: center;
+    max-width: 100%;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 20vh;
+}
+
+#music-sec{
+    background-color: var(--secMusic);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+#music-conteiner{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--music-Conteiner);
+    height: 50vh;
+    width: 90vw;
+    min-width: 250px;
+    max-width: 500px;
+    position: relative;
+    border-radius: 20px;
+}
+
+#info-music{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--info-musica) ;
+    height: 100px;
+    position: relative;
+}
+
+#info-music > h1{
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: hsl(0deg 0% 100%);
+}
+
+#conteiner-progressBar{
+    height: 5px;
+    width: 80%;
+    border-radius: 5px;
+    background-color: var(--progress-bar-conteiner);
+    cursor: pointer;
+}
+
+#progress-bar{
+    background-color: var(--progress-bar);
+    height: 5px;
+    width: 0;
+    border-radius: inherit;
+
+}
+
+.Music-img{
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 110px;
+    top: -70px;
+    transition: .3s;
+    user-select: none;
+    animation: girar 2s linear infinite;
+    animation-play-state: running;
+}
+
+.hide{
+    display: none;
+    top: 0px;
+    animation-play-state: paused;
+
+}
+
+.Music-img > img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#buttons-conteiner{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn{
+    background-color: transparent;
+    background-color: hsl(268deg 97% 76%);
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#play{
+    font-size: 2.5em;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+
+}
+i{
+    text-align: center;
+}
+
+@keyframes girar {
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(360deg);
+    }
+}

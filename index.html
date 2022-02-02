@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3bcdac161e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Music Player V2</h1>
+    </header>
+
+    <main>
+        <section id="music-sec">
+            <div id="music-conteiner">
+                <div id="info-music">
+
+                    <div id="Music-img" class="hide Music-img">
+                        <img src="" alt="imagem da musica atual" id="img">
+                    </div>
+                    <h1 id="music-title">Teste</h1>
+
+                    <div id="conteiner-progressBar">
+                        <div id="progress-bar"></div>
+                    </div>
+                    
+                </div>
+                
+                <audio src="musicas/Ben-to OP Full.mp3" id="audio"></audio>
+
+                <div id="buttons-conteiner">
+                    <button id="proximo" class="btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+        
+                    <button id="play" class="btn">
+                        <i class="far fa-play-circle"></i>
+                    </button> <!--<far fa-pause-circle para pausa-->
+        
+                    <button id="anterior" class="btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/musics.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
