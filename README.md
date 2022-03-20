@@ -1,2 +1,2 @@
-# musicV2
-projeto de um music player 
+# music player
+projeto de um music player para aprimorar os conhecimentos em javascript
